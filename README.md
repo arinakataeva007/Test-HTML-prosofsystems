@@ -5,7 +5,7 @@
 
 1. <a href = "#start">Как запустить проект?</a>
 2. <a href = "#stack">Stack-технологий</a>
-3. <a href = "#technical_assignment">функцонал</a>
+3. <a href = "#technical_assignment">Функцонал</a>
 4. <a href = "#description">Пояснения по работе</a>
   
 <a name = start></a>
