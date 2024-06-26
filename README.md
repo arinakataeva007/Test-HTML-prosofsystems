@@ -35,7 +35,7 @@
 | При нажатии на клавиатуре Shift + S ставится фокус в поле поиска на левой навигационной панели | src/app/children/dashboard/components/left-navigation/components/search-control |
 
 <a name = description></a>
-## Пояснения по работе
+## Пояснения к функционалу
 
 1. В левой навигационной панели не осуществляется роутинг по страницам.
 2. В administration.component есть верстка только mainPage.component (остальные страницы сделаны для только для навигации).
