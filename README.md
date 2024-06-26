@@ -1,12 +1,12 @@
 # Test-HTML-prosofsystems
-# FinancialAccountingApp
-В разработке
+Завершено
 
 ## Содержание
 
 1. <a href = "#start">Как запустить проект?</a>
 2. <a href = "#stack">Stack-технологий</a>
 3. <a href = "#technical_assignment">функцонал</a>
+4. <a href = "#description">Пояснения по работе</a>
   
 <a name = start></a>
 ## Как запустить проект?
@@ -24,32 +24,16 @@
 
 | Пункт ТЗ | Путь в проекте  |
 | ------- | --- |
-| 3 - 4 реактивные формы + форма авторизации + кэш |  |
-| 2 - 3 функциональных модуля |  |
-| 3 lazy-модуля для роутинга |  |
-| Функциональная цель проекта работает |  |
-| Простое внедрение зависимостей в модули |  |
-| Компоненты используют @Input и @Output |  |
-| Базовый RX/JS |  |
-| Паттерн Фабрика |  |
-| Reusable компоненты |  |
-| Передача параметров в роутах |  |
-| Guard's / Guarded routing |  |
-| Отсутствие any |  |
-| 1 - 2 кастомная атрибутивная директива |  |
-| 1 - 2 кастомных пайпа |  |
-| Использование @ViewChild и @ViewChildren |  |
-| Запросы на сервер |  |
-| Форматирование кода в соответствии с code-style |  |
-| MVVM |  |
-| Сложное внедрение зависимостей |  |
-| DRY |  |
-| Хлебные крошки / Breadcrumbs |  |
-| Использование @HostListner |  |
-| Обработка ошибок. Global error handler |  |
-| Динамический рендер компоненты |  |
-| SOLID |  |
-| Скелетоны |  |
-| Адаптивность |  |
-| Angular animations |  |
-| Глобальный сервис событий |  |
+| Роутинг по страницам (главная навигация и внутренние навигации) | src/app/children/dashboard/components/main-navigation  |
+| Привязана 1 реактивная форма | src/app/children/dashboard/pages/administration-page/pages/main-page/main-page.component.ts |
+| Кастомный чекбокс | src/app/children/dashboard/components/custom-checkbox |
+| Кастомный селект | src/app/children/dashboard/components/custom-select |
+| Стили с миксинами | src/app/children/dashboard/styles/mixin-global.style.scss |
+| Стили с переменными | src/app/children/dashboard/styles/variables-global.style.scss |
+
+<a name = description></a>
+## Пояснения по работе
+
+1. В левой навигационной не осуществляется роутинг по страницам.
+2. В administration.component есть верстка только mainPage.component (остальные страницы сделаны для только для навигации).
+3. В mainPage.component сделана выерстка только inside-main-page.component (остальные страницы сделаны для только для навигации).
