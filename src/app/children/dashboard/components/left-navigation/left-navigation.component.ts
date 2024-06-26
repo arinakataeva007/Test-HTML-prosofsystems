@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './styles/left-navigation.component.scss'
 })
 export class LeftNavigationComponent {
-  protected notificationsIs: boolean = false;
+    protected notificationsIs: boolean = false;
 }

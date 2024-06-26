@@ -1,9 +1,9 @@
 import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-custom-select',
-  templateUrl: './custom-select.component.html',
-  styleUrl: './styles/custom-select.component.scss'
+    selector: 'app-custom-select',
+    templateUrl: './custom-select.component.html',
+    styleUrl: './styles/custom-select.component.scss',
 })
 export class CustomSelectComponent {
     @ViewChild('select_icon') selectIcon!: ElementRef;
@@ -11,10 +11,10 @@ export class CustomSelectComponent {
     @Input() value!: string;
 
     public openList(){
-      this.selectIcon.nativeElement.style.transform = 'rotate(180deg)';
-      console.log("Hello")
+        this.selectIcon.nativeElement.style.transform = 'rotate(180deg)';
+        console.log("Hello")
     }
     public closeList(){
-      this.selectIcon.nativeElement.style.transform = 'rotate(0deg)';
+        this.selectIcon.nativeElement.style.transform = 'rotate(0deg)';
     }
 }

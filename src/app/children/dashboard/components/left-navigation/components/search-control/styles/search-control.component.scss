@@ -8,14 +8,15 @@
         box-sizing: border-box;
         @include border-style-mixin(1px solid rgb(152, 152, 152), 6px, rgb(255, 255, 255), 0);
         padding-left: 38px;
-    }
-    .search-container__input::placeholder{
-        @include font-mixin(14px, rgba(0, 0, 0, 0.4), 400, left);
-    }
-    .search-container__input:focus{
-        outline: none;
-        border: 1px solid rgb(152, 152, 152);
-        border-radius: 4px;
+        &::placeholder{
+            @include font-mixin(14px, rgba(0, 0, 0, 0.4), 400, left);
+        }
+        &:focus{
+            outline: none;
+            border: 1px solid rgb(152, 152, 152);
+            border-radius: 4px;
+            background: rgb(250, 250, 250);
+        }
     }
     .search-container__img{
         position: absolute;

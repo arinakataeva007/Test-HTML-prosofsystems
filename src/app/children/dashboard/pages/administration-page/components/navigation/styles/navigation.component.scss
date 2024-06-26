@@ -6,11 +6,10 @@
         @include position-padding-mixin(7px, 16px, 9px, 16px);
         text-decoration: none;
         @include font-mixin(14px, rgb(64, 106, 191), 400, center);
-    }
-
-    .administration-navigation__link:hover{
-        background: rgb(214, 214, 214);
-        border-radius: 4px;
+        &:hover{
+            background: rgb(214, 214, 214);
+            border-radius: 4px;
+        }
     }
     .active{
         border-radius: 4px;

@@ -21,7 +21,7 @@ export class MainPageComponent implements OnInit{
         this.updateIconVisibility();
     }
 
-    updateIconVisibility() {
+    protected updateIconVisibility() {
         if (this.formUser.get('fullName')?.valid) {
             this.isValid = true;
         } else {
