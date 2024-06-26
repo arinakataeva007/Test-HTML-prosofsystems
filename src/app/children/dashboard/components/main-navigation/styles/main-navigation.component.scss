@@ -56,6 +56,12 @@
         .active{
             background: rgb(255, 255, 255);
             border-bottom: none;
+            &:hover{
+                background: rgb(255, 255, 255);
+                .close-btn{
+                    background: rgb(255, 255, 255);
+                }
+            }
         }
     }
     .navigation__page-container{

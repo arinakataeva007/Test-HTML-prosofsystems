@@ -12,7 +12,6 @@ export class CustomSelectComponent {
 
     public openList(){
         this.selectIcon.nativeElement.style.transform = 'rotate(180deg)';
-        console.log("Hello")
     }
     public closeList(){
         this.selectIcon.nativeElement.style.transform = 'rotate(0deg)';

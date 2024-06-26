@@ -5,15 +5,15 @@
         </li>
         <li class="navigation__list__item" routerLinkActive="active" (mouseover)="checkHover($event)" (mouseleave)="resetNavigation()">
             <a routerLink="/usersAndSettings" class="list__item__link">User and rights settings</a>
-            <button (click)="closePage()" id="userright" class="close-btn" *ngIf="namePage=='Users And Settings' && activeName=='User and rights settings'"><img class="close-btn__img" src="./assets/icons/cross_icon.svg"></button>
+            <button (click)="closePage()" id="userright" class="close-btn" *ngIf="activeName=='User and rights settings'"><img class="close-btn__img" src="./assets/icons/cross_icon.svg"></button>
         </li>
         <li class="navigation__list__item" routerLinkActive="active" (mouseover)="checkHover($event)" (mouseleave)="resetNavigation()">
             <a routerLink="/users" class="list__item__link">Users</a>
-            <button (click)="closePage()" class="close-btn" *ngIf="namePage=='Users' && activeName=='Users'" style="left: 15px"><img class="close-btn__img" src="./assets/icons/cross_icon.svg"></button>
+            <button (click)="closePage()" class="close-btn" *ngIf="activeName=='Users'" style="width: 20px; left: 25px"><img class="close-btn__img" src="./assets/icons/cross_icon.svg"></button>
         </li>
         <li class="navigation__list__item" routerLinkActive="active" (mouseover)="checkHover($event)" (mouseleave)="resetNavigation()">
             <a routerLink="/administration/main" class="list__item__link">Administrator EN (User)</a>
-            <button (click)="closePage()" class="close-btn" *ngIf="namePage=='Administrator EN (User)' && activeName=='Administrator EN (User)'"><img class="close-btn__img" src="./assets/icons/cross_icon.svg"></button>
+            <button (click)="closePage()" class="close-btn" *ngIf="activeName=='Administrator EN (User)'"><img class="close-btn__img" src="./assets/icons/cross_icon.svg"></button>
         </li>
         <li class="navigation__list__item last"></li>
     </ul>
