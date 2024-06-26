@@ -32,6 +32,7 @@
 | Кастомный селект | src/app/children/dashboard/components/custom-select |
 | Стили с миксинами | src/app/children/dashboard/styles/mixin-global.style.scss |
 | Стили с переменными | src/app/children/dashboard/styles/variables-global.style.scss |
+| При нажатии на клавиатуре Shift + S ставится фокус в поле поиска на левой навигационной панели | src/app/children/dashboard/components/left-navigation/components/search-control |
 
 <a name = description></a>
 ## Пояснения по работе
