@@ -1,0 +1,92 @@
+@import "../../../styles/mixin-global.style.scss";
+@import "../../../styles/variables-global.style.scss";
+
+.navigation{
+    background: rgb(250, 250, 250);
+    .navigation__list{
+        display: flex;
+        @include list-decoration;
+        box-sizing: border-box;
+        background: rgb(250, 250, 250);
+        z-index: 10;
+        .navigation__list__item{
+            position: relative;
+            border-right: 1px solid rgb(152, 152, 152);
+            background: rgb(250, 250, 250);
+            border-bottom: 1px solid rgb(152, 152, 152);
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 12px;
+            padding-right: 12px;
+            .list__item__link{
+                text-decoration: none;
+                @include font-mixin(12px, rgb(0, 0, 0), 400, left);
+            }
+            .close-btn{
+                cursor: pointer;
+                height: 36px;
+                padding: 6px 8px 6px 4px;
+                box-shadow: -8px 0px 8px 0px rgb(230, 230, 230);
+                background: #FFFFFF;
+                border: none;
+                position: absolute;
+                z-index: 1000;
+                top: 0px;
+                left: 73%;
+                .close-btn__img{
+                    padding: 8px;
+                }
+            }
+            &:hover{
+                background: #D6D6D6;
+                .close-btn{
+                    background: #D6D6D6;
+                }
+            }
+        }  
+        .last{
+            flex-grow: 1; 
+            border-right: none;
+        }
+        .active{
+            background: rgb(255, 255, 255);
+            border-bottom: none;
+        }
+    }
+    .navigation__page-container{
+        background: rgb(255, 255, 255);
+        @include position-padding-mixin(24px, 32px, 24px, 38px);
+        display: flex;
+        border-bottom: 1px solid rgb(152, 152, 152);
+        .page-container__btn-container{
+            @include display-mixin(16px, row);
+            .btn-container__button{
+                height: 36px;
+                box-sizing: border-box;
+                padding: 6px;
+                border: none;
+                border-radius: 4px;
+                background: rgb(255, 255, 255);
+            }
+            .btn-container__button:hover{
+                background: rgb(214, 214, 214);
+            }
+        }
+        .page-container__title{
+            margin-left: 24px;
+            @include font-mixin(28px, rgb(0, 0, 0), 600, left);
+            width: 784px;
+        }
+        .page-container__links-container{
+            padding-top: $padding-top-main;
+            margin-left: 30px;
+            @include display-mixin(16px, row);
+            .links-container__icon:hover{
+                border-radius: 4px;
+                background: rgb(214, 214, 214);
+            }
+        }
+    }
+}

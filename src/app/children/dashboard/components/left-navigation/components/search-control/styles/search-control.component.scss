@@ -1,0 +1,32 @@
+@import "../../../styles/left-navigation.component.scss";
+.left-navigation__search-container{
+    position: relative;
+    margin-bottom: 16px;
+    .search-container__input{
+        width: $width-left-navigation;
+        height: $height-left-navigation-search;
+        box-sizing: border-box;
+        @include border-style-mixin(1px solid rgb(152, 152, 152), 6px, rgb(255, 255, 255), 0);
+        padding-left: 38px;
+    }
+    .search-container__input::placeholder{
+        @include font-mixin(14px, rgba(0, 0, 0, 0.4), 400, left);
+    }
+    .search-container__input:focus{
+        outline: none;
+        border: 1px solid rgb(152, 152, 152);
+        border-radius: 4px;
+    }
+    .search-container__img{
+        position: absolute;
+        background: none;
+        top: 9px;
+        left: 10px;
+    }
+    .search-container__keyboard_icon{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        @include border-style-mixin(none, 4px, rgba(0, 0, 0, 0.04), 4px 6px 4px 6px);
+    }
+}

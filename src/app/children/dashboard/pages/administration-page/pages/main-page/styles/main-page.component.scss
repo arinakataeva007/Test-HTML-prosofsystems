@@ -1,0 +1,67 @@
+@import "../../../styles/administration-page.component.scss";
+.main-page__article{
+    border-bottom: 1px solid rgb(152, 152, 152);
+    padding-left: 32px;
+    .article__form{
+        @include display-mixin(24px, column);
+        margin-bottom: 24px;
+        .form__controls-container{
+            display: flex;
+            .controls-container__fields{
+                @include display-mixin(8px, column);
+                .form__label{
+                    width: 504px;
+                }
+                .form__control{
+                    width: $control-width;
+                    height: $control-height;
+                    box-sizing: border-box;
+                    @include border-style-mixin(1px solid rgb(214, 214, 214), 4px, rgb(255, 255, 255), 0);
+                    padding-left: 16px;
+                    &:focus{
+                        outline: none;
+                    }
+                    &:hover{
+                        background: rgb(250, 250, 250);
+                    }
+                }
+            }
+            .controls-container__valid-container{
+                display: flex;
+                @include position-margin-mixin(36px,0, 0, 16px);
+                .btn-container__valid-img{
+                    width: $checkbox-size;
+                    height: $checkbox-size;
+                    @include border-style-mixin(1px solid rgb(214, 214, 214), 4px, none, 0);
+                }
+                .checkbox-container__label{
+                    @include position-margin-mixin(-1px, 8px, 0, 8px);
+                }
+            }
+            .controls-container__btn-container{
+                @include position-margin-mixin(28px,0, 0, 16px);
+                @include display-mixin(16px, row);
+                .btn-container__img{
+                    @include border-style-mixin(1px solid rgb(214, 214, 214), 4px, none, 10px);
+                    &:hover{
+                        border: 1px solid rgb(152, 152, 152);
+                    }
+                }
+            }
+        }
+    }
+    .article__logOn-container{
+        display: flex;
+        margin-bottom: 40px;
+        .logOn-container__label{
+            cursor: pointer;
+            display: flex;
+            @include position-margin-mixin(-1px,16px, 0, 0);
+            @include font-mixin(14px, rgb(0, 0, 0), 400, left);
+        }
+        .logOn-container__link{
+            margin-top: -1px;
+            @include font-mixin(14px, rgb(64, 106, 191), 400, left);
+        }
+    }
+}

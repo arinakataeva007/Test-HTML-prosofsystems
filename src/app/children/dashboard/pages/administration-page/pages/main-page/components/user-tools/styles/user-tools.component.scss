@@ -1,0 +1,47 @@
+@import "../../../styles/main-page.component.scss";
+
+.toolbar{
+    display: flex;
+    .toolbar__list{
+        @include display-mixin(8px, row);
+        @include list-decoration;
+        @include position-padding-mixin(0, 32px, 24px, 32px);
+        margin-right: 96px;
+        .list__item__btn{
+            box-sizing: border-box;
+            @include border-style-mixin(1px solid rgb(214, 214, 214), 4px, rgb(255, 255, 255), 7px 8px 9px 8px);
+            @include font-mixin(14px, rgb(0,0,0), 400, left);
+            height: 36px;
+            .list__item__img{
+                padding: 3px 2px 1px 2px;
+            }
+            .select-btn{
+                padding-right: 14px;
+            }
+        }
+        .list__item__btn:hover{
+            outline: none;
+            border: 1px solid rgb(152, 152, 152);
+        }
+    }
+    .toolbar__btn-container{
+        @include display-mixin(8px, row);
+        .btn-container__btn{
+            width: 128px;
+            height: 36px;
+            @include font-mixin(14px, rgb(0, 0, 0), 400, center);
+            @include border-style-mixin(1px solid rgb(214, 214, 214), 4px, rgb(255, 255, 255), 7px 8px 9px 8px);
+        }
+        .close{
+            border-style: none;
+            background: rgb(255, 219, 77);
+        }
+        .btn-container__btn:hover{
+            @include border-style-mixin(1px solid rgb(152, 152, 152), 4px, rgb(255, 255, 255), 7px 8px 9px 8px);
+        }
+        .close:hover{
+            border: none;
+            background: rgb(255, 209, 26);
+        }
+    }
+}

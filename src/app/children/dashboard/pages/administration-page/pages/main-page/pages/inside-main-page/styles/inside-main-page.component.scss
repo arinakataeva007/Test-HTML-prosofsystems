@@ -1,0 +1,81 @@
+@import "../../../styles/main-page.component.scss";
+.inside-mainPage{
+    margin-left: 32px;
+    .inside-mainPage__form{
+        @include display-mixin(24px, column);
+        .form__container{
+            .container__label{
+                cursor: pointer;
+                display: flex;
+                width: 504px;
+                @include font-mixin(14px, rgb(0, 0, 0), 400, left);
+                @include display-mixin(8px, row);
+            }
+            .input-text__label{
+                @include display-mixin(8px, column);
+                .container__control{
+                    @include border-style-mixin(1px solid rgb(214, 214, 214), 4px, rgb(255, 255, 255), 0);
+                    width: $control-width;
+                    height: $control-height;
+                }
+            }
+            .form__container__fields{
+                margin-left: 24px;
+                .fields__blank-password-container{
+                    display: flex;
+                    margin-bottom: 20px;
+                    .blank-password-container__text{
+                        margin-left: 8px;
+                        @include font-mixin(14px, rgb(0, 0, 0), 400, left);
+                    }
+                    .blank-password-container__link{
+                        margin-left: 16px;
+                        @include font-mixin(14px, rgb(64, 106, 191), 400, left);
+                    }
+                }
+            }
+        }
+        .checkboxes{
+            .container__label{
+                margin-bottom: 20px;
+                .container__control__icon{
+                    margin-left: 8px;
+                }
+            }
+        }
+        .with-btn{
+            display: flex;
+            .form__container__btn{
+                width: $btn-size;
+                height: $btn-size;
+                box-sizing: border-box;
+                @include border-style-mixin(1px solid rgb(214, 214, 214), 4px, rgb(255, 255, 255), 10px);
+                @include position-margin-mixin(28px, 0, 0, 16px);
+                &:hover{
+                    border: 1px solid rgb(152, 152, 152);
+                }
+            }
+        }
+    }
+    .inside-mainPage__btn-container{
+        @include display-mixin(8px, row);
+        @include position-margin-mixin(24px, 0, 32px, 0);
+        .btn-container__btn{
+            @include font-mixin(14px, rgb(0, 0, 0), 400, center);
+            @include border-style-mixin(1px solid rgb(214, 214, 214), 4px, rgb(255, 255, 255), 7px 8px 9px 8px);
+            width: 128px;
+            height: $btn-size;
+        }
+        .close{
+            border-style: none;
+            background: rgb(255, 219, 77);
+        }
+        .btn-container__btn:hover{
+            @include border-style-mixin(1px solid rgb(152, 152, 152), 4px, rgb(255, 255, 255), 7px 8px 9px 8px);
+        }
+        .close:hover{
+            border: none;
+            background: rgb(255, 209, 26);
+        }
+    }
+}

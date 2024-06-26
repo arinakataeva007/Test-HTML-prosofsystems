@@ -1,0 +1,32 @@
+<nav class="navigation">
+    <ul class="navigation__list">
+        <li class="navigation__list__item"routerLinkActive="active" (mouseover)="checkHover($event)" (mouseleave)="resetNavigation()">
+            <a routerLink="/default"><img class="item__img" src="./assets/icons/home_icon.svg" width="12" height="12.49"></a> 
+        </li>
+        <li class="navigation__list__item" routerLinkActive="active" (mouseover)="checkHover($event)" (mouseleave)="resetNavigation()">
+            <a routerLink="/usersAndSettings" class="list__item__link">User and rights settings</a>
+            <button (click)="closePage()" id="userright" class="close-btn" *ngIf="namePage=='Users And Settings' && activeName=='User and rights settings'"><img class="close-btn__img" src="./assets/icons/cross_icon.svg"></button>
+        </li>
+        <li class="navigation__list__item" routerLinkActive="active" (mouseover)="checkHover($event)" (mouseleave)="resetNavigation()">
+            <a routerLink="/users" class="list__item__link">Users</a>
+            <button (click)="closePage()" class="close-btn" *ngIf="namePage=='Users' && activeName=='Users'" style="left: 15px"><img class="close-btn__img" src="./assets/icons/cross_icon.svg"></button>
+        </li>
+        <li class="navigation__list__item" routerLinkActive="active" (mouseover)="checkHover($event)" (mouseleave)="resetNavigation()">
+            <a routerLink="/administration/main" class="list__item__link">Administrator EN (User)</a>
+            <button (click)="closePage()" class="close-btn" *ngIf="namePage=='Administrator EN (User)' && activeName=='Administrator EN (User)'"><img class="close-btn__img" src="./assets/icons/cross_icon.svg"></button>
+        </li>
+        <li class="navigation__list__item last"></li>
+    </ul>
+    <div class="navigation__page-container">
+        <div class="page-container__btn-container">
+            <button (click)="goToPrevPage()" class="btn-container__button"><img src="./assets/icons/arrow-narrow-left_icon.svg"></button>
+            <button (click)="goToNextPage()" class="btn-container__button"><img src="./assets/icons/rrow-narrow-right_icon.svg"></button>
+        </div>
+        <h1 class="page-container__title">{{namePage}}</h1>
+        <div class="page-container__links-container">
+            <img class="links-container__icon" src="./assets/icons/star_icon.svg" width="24" height="24">
+            <img class="links-container__icon" src="./assets/icons/link_icon.svg" width="24" height="24">
+            <img class="links-container__icon" src="./assets/icons/dots-horizontal_icon.svg" width="24" height="24">            
+        </div>
+    </div>
+</nav>

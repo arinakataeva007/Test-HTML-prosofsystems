@@ -1,0 +1,16 @@
+@import "../../../styles/mixin-global.style.scss";
+@import "../../../styles/variables-global.style.scss";
+
+.main-content{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-content: start;
+    align-items: start;
+    justify-content: start;
+    background: rgb(250, 250, 250);
+}
+.content{
+    @include position-margin-mixin(16px, 0, 0, 336px);
+    @include border-style-mixin(1px solid rgb(152, 152, 152), 7px 7px 0px 0px,rgb(255, 255, 255), 0);
+}

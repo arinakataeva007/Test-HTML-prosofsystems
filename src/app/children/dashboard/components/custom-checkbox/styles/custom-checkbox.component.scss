@@ -1,0 +1,32 @@
+.checkbox {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .checkbox-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    transition: .3s;
+  }
+  
+  .checkbox-icon {
+    opacity: 0;
+    transition: .3s;
+  }
+  
+  .checkbox:checked + .checkbox-view {
+    border: none;
+    border-radius: 4px;
+    background: rgb(255, 209, 26);
+  }
+  
+  .checkbox:checked + .checkbox-view .checkbox-icon {
+    opacity: 1;
+  }

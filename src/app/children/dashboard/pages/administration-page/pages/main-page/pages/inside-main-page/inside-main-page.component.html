@@ -1,0 +1,62 @@
+<section class="inside-mainPage">
+    <form class="inside-mainPage__form">
+        <div class="form__container">
+            <label for="username" class="container__label input-text__label">Username (used on sign in)
+                <app-custom-select [value]="'Administrator'"/>
+            </label>
+        </div>
+
+        <div class="form__container checkboxes">
+            <label class="container__label">
+                <app-custom-checkbox/>
+                1C:Enterprise authentication
+            </label>
+            <div class="form__container__fields">
+                <div class="fields__blank-password-container">
+                    <img class="blank-password-container__img" src="./assets/icons/unlock_icon.svg" width="20px" height="20px">
+                    <p class="blank-password-container__text">Blank password</p>
+                    <p class="blank-password-container__link">Set password</p>
+                </div>
+                <label class="container__label">
+                    <app-custom-checkbox/>
+                    Require to set a password upon authorization
+                    <img class="container__control__icon" src="./assets/icons/valid_icon.svg" width="20" height="20">
+                </label>
+                <label class="container__label">
+                    <app-custom-checkbox/>
+                    User has been prevented from changing password
+                </label>
+                <label  class="container__label">
+                    <app-custom-checkbox/>
+                    Show in the selection list
+                </label>
+            </div>
+            <label class="container__label">
+                <app-custom-checkbox/>
+                OpenID authentication
+            </label>
+            <label class="container__label">
+                <app-custom-checkbox/>
+                OS authentication
+            </label>
+        </div>
+
+        <div class="form__container with-btn">
+            <label class="container__label input-text__label">Раздел по умолчанию
+                <app-custom-select/>
+            </label>
+            <button class="form__container__btn"><img src="./assets/icons/dots-horizontal_icon.svg" width="16" height="16"></button>
+        </div>
+
+        <div class="form__container">
+            <label class="container__label input-text__label">Application interface language
+                <app-custom-select [value]="'English'"/>
+            </label>
+        </div>
+    </form>
+
+    <div class="inside-mainPage__btn-container">
+        <button class="btn-container__btn">Save</button>
+        <button class="btn-container__btn close">Save and Close</button>
+    </div>
+</section>

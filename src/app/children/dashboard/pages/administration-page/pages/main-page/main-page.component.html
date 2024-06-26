@@ -1,0 +1,49 @@
+<app-user-tools/>
+<article class="main-page__article">
+    <form class="article__form" [formGroup]="formUser">
+        <div class="form__controls-container">
+            <div class="controls-container__fields">
+                <label class="form__label" for="fullName">Full Name</label>
+                <input class="form__control" type="text" id="fullName" name="fullName" [formControlName]="'fullName'">
+            </div>
+            <div class="controls-container__valid-container">
+                <img class="btn-container__valid-img" [src]="isValid ? './assets/icons/check_white_icon.svg' : './assets/icons/check_icon.svg'" width="7.5" height="5">
+                <p class="checkbox-container__label">Not Valid</p>
+                <img class="checkbox-containe__icon" src="./assets/icons/valid_icon.svg" width="20" height="20">
+            </div>
+        </div>
+        <div class="form__controls-container">
+            <div class="controls-container__fields">
+                <label class="form__label">Individual</label>
+                <app-custom-select></app-custom-select>
+            </div>
+            <div class="controls-container__btn-container">
+                <img class="btn-container__img" src="./assets/icons/copy_icon.svg" width="16px" height="16px">
+                <img class="btn-container__img" src="./assets/icons/copy_icon.svg" width="16px" height="16px">
+            </div>
+        </div>
+        <div class="form__controls-container">
+            <div class="controls-container__fields">
+                <label class="form__label">Department</label>
+                <app-custom-select></app-custom-select>
+            </div>
+            <div class="controls-container__btn-container">
+                <img class="btn-container__img" src="./assets/icons/copy_icon.svg" width="16px" height="16px">
+            </div>
+        </div>
+    </form>
+    <div class="article__logOn-container">
+        <label class="logOn-container__label">
+            <app-custom-checkbox></app-custom-checkbox>
+            Can log on to Application
+        </label>
+        <a src="#" class="logOn-container__link">Set authentication restraction</a>
+    </div>
+</article>
+<section class="inside-page__container">
+    <app-inside-navigation/>
+    <router-outlet/>
+</section>
+
+
+  

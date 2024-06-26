@@ -1,0 +1,25 @@
+@import "../../../styles/mixin-global.style.scss";
+@import "../../../styles/variables-global.style.scss";
+.select-container{
+    position: relative;
+    .select{
+        appearance: none;
+        width: 100%;
+        height: $control-height;
+        box-sizing: border-box;
+        @include border-style-mixin(1px solid rgb(214, 214, 214), 4px, rgb(255, 255, 255), 7px 38px 9px 16px);
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background: rgb(250, 250, 250);
+        }
+    }
+    .select-box__icon{
+        position: absolute;
+        top: 9px;
+        left: 94%;
+        transform: rotate(0deg); 
+        transition: transform 0.5s ease-in-out;
+    }
+}

@@ -1,0 +1,62 @@
+<nav class="left-navigation">
+    <div class="left-navigation__person-tools-container">
+        <img class="person-tools-container__img" src="./assets/icons/person_icon.svg" alt="Photo user" >
+        <p class="person-tools-container__name">Livia Mango</p>
+        <div class="person-tools-container__tools-container">
+            <button class="tools-container__btn"><img class="tools-container__img" [src]="notificationsIs ? './assets/icons/notifications_icon.svg' : './assets/icons/no-notification_icon.svg'" alt="Notification icon" width="20" height="20"></button>
+            <button class="tools-container__btn"><img class="tools-container__img" src="./assets/icons/clock-rewind_icon.svg" alt="Clock icon" width="20" height="20"></button>
+            <button class="tools-container__btn"><img class="tools-container__img" src="./assets/icons/menu_icon.svg" alt="Menu icon" width="20" height="20"></button>
+        </div>
+    </div>
+    <app-search-control/>
+    <ul class="left-navigation__pages-list">
+        <li class="pages-list__item">
+            <img class="item__img" src="./assets/icons/star_icon.svg" alt="Star">
+            <a routerLink="/favorite" routerLinkActive="active" class="item__text">Favorites</a>
+        </li>
+        <li class="pages-list__item">
+            <img class="item__img" src="./assets/icons/line-chart-up_icon.svg" alt="Plan">
+            <p class="item__text">Budgeting and Planning</p>
+        </li>
+        <li class="pages-list__item">
+            <img class="item__img" src="./assets/icons/pie-chart_icon.svg" alt="Marketing">
+            <p class="item__text">CRM and Marketing</p>
+        </li>
+        <li class="pages-list__item">
+            <img class="item__img" src="./assets/icons/log-out_icon.svg" alt="Sale">
+            <p class="item__text">Sales</p>
+        </li>
+        <li class="pages-list__item">
+            <img class="item__img" src="./assets/icons/log-in_icon.svg" alt="LogIn">
+            <p class="item__text">Purchases</p>
+        </li>
+        <li class="pages-list__item">
+            <img class="item__img" src="./assets/icons/route_icon.svg" alt="LogOut">
+            <p class="item__text">Warehouse and DeliveryProduction</p>
+        </li>
+        <li class="pages-list__item">
+            <img class="item__img" src="./assets/icons/cube_icon.svg" alt="Product">
+            <p class="item__text">Production</p>
+        </li>
+        <li class="pages-list__item">
+            <img class="item__img" src="./assets/icons/wallet_icon.svg" alt="Cash">
+            <p class="item__text">Cash Flow</p>
+        </li>
+        <li class="pages-list__item">
+            <img class="item__img" src="./assets/icons/bar-chart-square_icon.svg" alt="BarChart">
+            <p class="item__text">Financial Result and Controlling</p>
+        </li>
+        <li class="pages-list__item">
+            <img class="item__img" src="./assets/icons/building_icon.svg" alt="Star">
+            <p class="item__text">Capital Assets</p>
+        </li>
+        <li class="pages-list__item">
+            <img class="item__img" src="./assets/icons/bank-note_icon.svg" alt="Star">
+            <p class="item__text">International Financial Accounting</p>
+        </li>
+        <li class="pages-list__item">
+            <img class="item__img" src="./assets/icons/settings_icon.svg" alt="Star">
+            <p class="item__text">Master Data and Settings</p>
+        </li>
+    </ul>
+</nav>

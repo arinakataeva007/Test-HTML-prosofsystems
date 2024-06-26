@@ -1,0 +1,19 @@
+@import "../../../styles/main-page.component.scss";
+.administration-mainPage-navigation{
+    padding: 32px;
+    display: flex;
+    .administration-mainPage-navigation__link{
+        @include position-padding-mixin(7px, 16px, 9px, 16px);
+        @include font-mixin(14px, rgb(64, 106, 191), 400, center);
+        text-decoration: none;
+    }
+    .administration-mainPage-navigation__link:hover{
+        background: rgb(214, 214, 214);
+        border-radius: 4px;
+    }
+    .active{
+        border-radius: 4px;
+        background: rgb(214, 214, 214);
+        color: rgb(0, 0, 0);
+    }
+}
